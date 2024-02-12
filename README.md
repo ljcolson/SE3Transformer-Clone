@@ -1,6 +1,8 @@
 This is a cloned repository of https://github.com/NVIDIA/DeepLearningExamples/tree/master/DGLPyTorch/DrugDiscovery/SE3Transformer/
 
-This might not be up-to-date. Cloned for easier install on Slurm based clusters
+This repository not be up-to-date with the current SE3Transformer repo. For the most up-to-date code see https://github.com/NVIDIA/DeepLearningExamples/tree/master/DGLPyTorch/DrugDiscovery/SE3Transformer/
+
+Small edits to the import statements were made. This repository is meant to be an easy way to install SE3Transformer to install RFdiffusion on Slurm based clusters
 
 # SE(3)-Transformers For PyTorch
 
