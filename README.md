@@ -1,3 +1,7 @@
+This is a cloned repository of https://github.com/NVIDIA/DeepLearningExamples/tree/master/DGLPyTorch/DrugDiscovery/SE3Transformer/
+
+This might not be up-to-date. Cloned for easier install on Slurm based clusters
+
 # SE(3)-Transformers For PyTorch
 
 This repository provides a script and recipe to train the SE(3)-Transformer model to achieve state-of-the-art accuracy. The content of this repository is tested and maintained by NVIDIA.
