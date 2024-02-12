@@ -36,16 +36,16 @@ from torch.optim import Optimizer
 from torch.utils.data import DataLoader, DistributedSampler
 from tqdm import tqdm
 
-from se3_transformer.model.data_loading import QM9DataModule
-from se3_transformer.model.model import SE3TransformerPooled
-from se3_transformer.model.model.fiber import Fiber
-from se3_transformer.model.runtime import gpu_affinity
-from se3_transformer.model.runtime.arguments import PARSER
-from se3_transformer.model.runtime.callbacks import QM9MetricCallback, QM9LRSchedulerCallback, BaseCallback, \
+from se3_transformer.data_loading import QM9DataModule
+from se3_transformer.model import SE3TransformerPooled
+from se3_transformer.model.fiber import Fiber
+from se3_transformer.runtime import gpu_affinity
+from se3_transformer.runtime.arguments import PARSER
+from se3_transformer.runtime.callbacks import QM9MetricCallback, QM9LRSchedulerCallback, BaseCallback, \
     PerformanceCallback
-from se3_transformer.model.runtime.inference import evaluate
-from se3_transformer.model.runtime.loggers import LoggerCollection, DLLogger, WandbLogger, Logger
-from se3_transformer.model.runtime.utils import to_cuda, get_local_rank, init_distributed, seed_everything, \
+from se3_transformer.runtime.inference import evaluate
+from se3_transformer.runtime.loggers import LoggerCollection, DLLogger, WandbLogger, Logger
+from se3_transformer.runtime.utils import to_cuda, get_local_rank, init_distributed, seed_everything, \
     using_tensor_cores, increase_l2_fetch_granularity
 
 

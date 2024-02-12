@@ -23,8 +23,8 @@
 
 import torch
 
-from se3_transformer.model.model import SE3Transformer
-from se3_transformer.model.model.fiber import Fiber
+from se3_transformer.model import SE3Transformer
+from se3_transformer.model.fiber import Fiber
 
 if __package__ is None or __package__ == '':
   from utils import get_random_graph, assign_relative_pos, get_max_diff, rot

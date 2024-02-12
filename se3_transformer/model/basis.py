@@ -31,7 +31,7 @@ import torch.nn.functional as F
 from torch import Tensor
 from torch.cuda.nvtx import range as nvtx_range
 
-from se3_transformer.model.runtime.utils import degree_to_dim
+from se3_transformer.runtime.utils import degree_to_dim
 
 torch._C._jit_set_profiling_executor(False)
 torch._C._jit_set_profiling_mode(False)

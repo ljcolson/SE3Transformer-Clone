@@ -29,11 +29,11 @@ from torch.nn.parallel import DistributedDataParallel
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from se3_transformer.model.runtime import gpu_affinity
-from se3_transformer.model.runtime.arguments import PARSER
-from se3_transformer.model.runtime.callbacks import BaseCallback
-from se3_transformer.model.runtime.loggers import DLLogger, WandbLogger, LoggerCollection
-from se3_transformer.model.runtime.utils import to_cuda, get_local_rank
+from se3_transformer.runtime import gpu_affinity
+from se3_transformer.runtime.arguments import PARSER
+from se3_transformer.runtime.callbacks import BaseCallback
+from se3_transformer.runtime.loggers import DLLogger, WandbLogger, LoggerCollection
+from se3_transformer.runtime.utils import to_cuda, get_local_rank
 
 
 @torch.inference_mode()
